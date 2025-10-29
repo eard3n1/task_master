@@ -19,7 +19,7 @@
 <h2>Configure</h2>
 <ol>
   <li>Clone the repository:
-    <pre><code>git clone </code></pre>
+    <pre><code>git clone https://github.com/eard3n1/task_master.git</code></pre>
   </li>
   <li>Install dependencies:
     <pre><code>pip install -r requirements.txt</code></pre>

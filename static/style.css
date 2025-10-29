@@ -1,0 +1,82 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 400px;
+    max-height: 100%;
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255,255,255,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.task-input {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    background: #2a2a2a;
+    color: #eee;
+}
+
+button {
+    background: #3b82f6;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    color: white;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #2563eb;
+}
+
+ul {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+    flex: 1;
+    overflow-y: auto;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #333;
+    gap: 10px;
+}
+
+li .task-text {
+    flex: 1;
+    word-break: break-word;
+}
+
+li button {
+    flex-shrink: 0;
+}
+
+.done {
+    text-decoration: line-through;
+    opacity: 0.6;
+}

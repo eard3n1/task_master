@@ -1,6 +1,6 @@
 <h1>task_master</h1>
 
-<p>A simple web-based task manager built with <strong>Flask</strong>. Tasks are stored locally in a JSON file.</p>
+<p>A simple web-based task list built with <strong>Flask</strong>. Tasks are stored locally in a JSON file.</p>
 
 <h2>Features</h2>
 <ul>

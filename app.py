@@ -18,7 +18,6 @@ def load_tasks():
 def save_tasks(tasks):
     with open(DATA_FILE, "w") as j:
         json.dump(tasks, j, indent=2)
-        print(f"{len(tasks)} task(s) in total")
 
 @app.route("/")
 def index():

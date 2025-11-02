@@ -1,6 +1,6 @@
 <h1>task_master</h1>
 
-<p>A simple web-based task manager built with <strong>Flask</strong>. Tasks are stored locally in a JSON file.</p>
+<p>A simple web-based task list built with <strong>Flask</strong>. Tasks are stored locally in a JSON file.</p>
 
 <h2>Features</h2>
 <ul>
@@ -19,7 +19,7 @@
 <h2>Configure</h2>
 <ol>
   <li>Clone the repository:
-    <pre><code>git clone </code></pre>
+    <pre><code>git clone https://github.com/eard3n1/task_master.git</code></pre>
   </li>
   <li>Install dependencies:
     <pre><code>pip install -r requirements.txt</code></pre>

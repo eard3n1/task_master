@@ -27,13 +27,12 @@
   <li>Run the app:
     <pre><code>python app.py</code></pre>
   </li>
-  <li>Open your browser at: <a href="http://127.0.0.1:5000">http://127.0.0.1:5000</a>
+  <li>Open your browser at: <a href="http://127.0.0.1:5000" target="_blank">http://127.0.0.1:5000</a>
 </ol>
 
 <h2>Notes</h2>
 <ul>
   <li>The app stores tasks locally in <code>tasks.json</code></li>
-  <li>Ensure <code>tasks.json</code> is writable by the app</li>
   <li>Minimal dependencies, designed to be pragmatic</li>
 </ul>
 

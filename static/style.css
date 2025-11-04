@@ -1,129 +1,130 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #121212;
-    color: #eee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #121212;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-    width: 90%;
-    max-width: 400px;
-    max-height: 90%;
-    background: #1f1f1f;
-    padding: 25px;
-    border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6), 0 0 10px rgba(255,255,255,0.05);
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.2s ease-in-out;
+  width: 90%;
+  max-width: 400px;
+  max-height: 90%;
+  background: #1f1f1f;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6), 0 0 10px rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease-in-out;
 }
 
 .container:hover {
-    transform: translateY(-3px);
+  transform: translateY(-3px);
 }
 
 .task-input {
-    display: flex;
-    gap: 12px;
+  display: flex;
+  gap: 12px;
 }
 
 input {
-    flex: 1;
-    padding: 10px 12px;
-    border: none;
-    border-radius: 10px;
-    background: #2a2a2a;
-    color: #eee;
-    font-size: 1rem;
-    outline: none;
-    transition: background 0.2s, box-shadow 0.2s;
+  flex: 1;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 10px;
+  background: #2a2a2a;
+  color: #eee;
+  font-size: 1rem;
+  outline: none;
+  transition: background 0.2s, box-shadow 0.2s;
 }
 
 input:focus {
-    background: #333;
-    box-shadow: 0 0 0 2px #3bf6e0b9;
+  background: #333;
+  box-shadow: 0 0 0 2px #3bf6e0b9;
 }
 
 button {
-    background: #3bf6e0b9;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 15px;
-    cursor: pointer;
-    color: #121212;
-    font-weight: bold;
-    transition: all 0.2s ease-in-out;
+  background: #3bf6e0b9;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  color: #121212;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
 }
 
 button:hover {
-    background: #3bf6e05d;
-    transform: scale(1.05);
+  background: #3bf6e05d;
+  transform: scale(1.05);
 }
 
 ul {
-    margin-top: 20px;
-    list-style: none;
-    padding: 0;
-    flex: 1;
-    overflow-y: auto;
-    scrollbar-width: thin;
-    scrollbar-color: #3bf6e0b9 transparent;
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+  flex: 1;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #3bf6e0b9 transparent;
 }
 
 ul::-webkit-scrollbar {
-    width: 6px;
+  width: 6px;
 }
 
 ul::-webkit-scrollbar-thumb {
-    background-color: #3bf6e0b9;
-    border-radius: 3px;
+  background-color: #3bf6e0b9;
+  border-radius: 3px;
 }
 
 ul::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
 
 li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    border-bottom: 1px solid #333;
-    gap: 12px;
-    transition: background 0.2s;
-    border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+  gap: 12px;
+  transition: background 0.2s;
+  border-radius: 8px;
 }
 
 li:hover {
-    background: rgba(59, 246, 224, 0.1);
+  background: rgba(59, 246, 224, 0.1);
 }
 
 li .task-text {
-    flex: 1;
-    word-break: break-word;
-    font-size: 1rem;
+  flex: 1;
+  word-break: break-word;
+  font-size: 1rem;
 }
 
 li button {
-    flex-shrink: 0;
-    background: transparent;
-    color: #ff6b6b;
-    font-weight: bold;
-    padding: 5px 8px;
-    border-radius: 6px;
-    transition: background 0.2s;
+  flex-shrink: 0;
+  background: transparent;
+  color: #ff6b6b;
+  font-weight: bold;
+  padding: 5px 8px;
+  border-radius: 6px;
+  transition: background 0.2s;
 }
 
 li button:hover {
-    background: #ff6b6b33;
+  background: #ff6b6b33;
 }
 
 .done {
-    text-decoration: line-through;
-    opacity: 0.6;
+  text-decoration: line-through;
+  opacity: 0.6;
 }

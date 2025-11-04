@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Task Master</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
     <div class="container">
-        <h1>Task Master</h1>
-        <div class="task-input">
-            <input id="taskText" type="text" placeholder="New task...">
-            <button id="addBtn">Add</button>
-        </div>
-        <ul id="taskList">
-            {% for t in tasks %}
-                <li data-id="{{ t.id }}" class="{{ 'done' if t.done }}">
-                    <span class="task-text">{{ t.text }}</span>
-                    <button class="toggle">✓</button>
-                    <button class="delete">✕</button>
-                </li>
-            {% endfor %}
-        </ul>
+      <h1>Task Master</h1>
+      <div class="task-input">
+        <input id="taskText" type="text" placeholder="New task..." />
+        <button id="addBtn">Add</button>
+      </div>
+      <ul id="taskList">
+        {% for t in tasks %}
+        <li data-id="{{ t.id }}" class="{{ 'done' if t.done }}">
+          <span class="task-text">{{ t.text }}</span>
+          <button class="toggle">✓</button>
+          <button class="delete">✕</button>
+        </li>
+        {% endfor %}
+      </ul>
     </div>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
-</body>
+  </body>
 </html>

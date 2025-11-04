@@ -52,5 +52,20 @@ def delete_task(task_id):
     save_tasks(tasks)
     return jsonify(success=True)
 
+@app.route("/edit/<task_id>", methods=["POST"])
+def edit_task(task_id):
+    data = request.get_json()
+    new_text = data.get("text", "").strip()
+    if not new_text:
+        return jsonify(success=False, error="Empty text"), 400
+
+    tasks = load_tasks()
+    for t in tasks:
+        if t["id"] == task_id:
+            t["text"] = new_text
+            break
+    save_tasks(tasks)
+    return jsonify(success=True)
+
 if __name__ == "__main__":
     app.run(debug=True)

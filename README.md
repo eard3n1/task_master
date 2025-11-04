@@ -7,6 +7,7 @@
   <li>Add tasks via input button or pressing <strong>Enter</strong></li>
   <li>Toggle tasks as done/undone</li>
   <li>Delete tasks as you move on</li>
+  <li><code>double_click</code> to rewrite tasks</li>
   <li>Tasks persist locally in <code>tasks.json</code></li>
 </ul>
 

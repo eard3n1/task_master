@@ -33,7 +33,6 @@
 <h2>Notes</h2>
 <ul>
   <li>The app stores tasks locally in <code>tasks.json</code></li>
-  <li>Ensure <code>tasks.json</code> is writable by the app</li>
   <li>Minimal dependencies, designed to be pragmatic</li>
 </ul>
 

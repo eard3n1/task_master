@@ -9,7 +9,7 @@
     />
   </head>
   <body>
-    <div class="container">
+    <main class="container">
       <h1>Task Master</h1>
       <div class="task-input">
         <input id="taskText" type="text" placeholder="New task..." />
@@ -24,7 +24,7 @@
         </li>
         {% endfor %}
       </ul>
-    </div>
+    </main>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
   </body>
 </html>

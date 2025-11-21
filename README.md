@@ -28,7 +28,9 @@
   <li>Run the app:
     <pre><code>python app.py</code></pre>
   </li>
-  <li>Open your browser at: <a href="http://127.0.0.1:5000">http://127.0.0.1:5000</a>
+  <li>Open your browser at:
+    <pre><code><a href="http://127.0.0.1:5000">http://127.0.0.1:5000</a></code></pre>
+  </li>
 </ol>
 
 <h2>Notes</h2>
